@@ -1,0 +1,284 @@
+@font-face {
+    font-family:'Spartan';
+    font-weight: 700 ;
+    src: url('../fonts/static/LeagueSpartan-SemiBold.ttf');
+}
+@font-face {
+    font-family:'Spartan';
+    font-weight: 400 ;
+    src: url('../fonts/static/LeagueSpartan-Light.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+.color-text-1{
+    color: #088178!important;
+}
+.bg-cyan{
+    background-color: #088178!important;
+}
+nav{
+    background-color: #e3e6f3;
+    box-shadow: 0 -20px 35px  0 #00000075;
+}
+.nav-hover{
+    transition: .2 all;
+}
+.nav-hover:hover,.nav-active{
+    color: #088178!important;
+}
+nav .offcanvas{
+    padding-left: 30px;
+}
+nav .offcanvas-start{
+    width: 260px!important;
+    background-color: #e3e6f3;
+    box-shadow: -20px 0px 46px 20px #00000040;
+    border: none;
+}
+.car-shop{
+    width: 25%;
+    background-color: #088178;
+}
+.nav-hover:hover::before,
+.nav-active::before{
+    content: '';
+    position: absolute;
+    background-color: #088178;
+    width: 28px;
+    padding: 1px;
+    transform: translate(0px,27px);
+    animation: before-hover 0.5s linear;
+}
+.img-home{
+    height: 90vh;
+    background: url("../img/hero4.png") no-repeat top 26% left 0%;
+    background-size: cover;
+}
+.img-contact{
+    height: 40vh;
+    background: url("../img/about/banner.png") no-repeat left;
+    background-size: cover;
+}
+.img-blog{
+    height: 40vh;
+    background: url("../img/blog/b19.jpg") no-repeat center;
+    background-size: cover;
+}
+.img-shop{
+    height: 40vh;
+    background: url("../img/blog/b1.jpg") no-repeat center;
+    background-size: cover;
+}
+.button-shop{
+    width: 235px;
+    height: 55px;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    background: url('../img/button.png') no-repeat;
+    background-size: contain;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    border: solid #42ca9887 1px;
+    box-shadow: 6px 6px 30px #e3e6f3;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 20px;
+}
+.card-shop{
+    border: solid #71b4837d 1px;
+    box-shadow: 6px 6px 30px #e3e6f383;
+    border-radius: 30px;
+    padding: 10px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.star{
+    font-size: 13px;
+}
+.card-shop img{
+    border-radius: 25px;
+}
+.shopping{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9d3d44d;
+    border: solid #93cac788 1px;
+}
+.card-shop:hover,.card-info:hover{
+    box-shadow: 8px 11px 45px 0px #ced2e3ba;
+}
+.card-info p{
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #dbf4f6;
+    color: #567007bb;
+}
+.bg-img{
+    width: 100%;
+    height: 260px;
+    background: url('../img/blog/b2.jpg') center;
+    background-size: cover;
+}
+.bg-img button{
+    font-size: 18px;
+    padding: 10px 30px;
+    transition: all .3s;
+}
+.bg-img button:hover{
+    background-color: #088178!important;
+    color: white;
+}
+.card-pro div:first-child{
+    padding: 6em 2rem;
+    background: url('../img/blog/b17.jpg') right;
+    background-size: cover;
+}
+.card-pro div:last-child{
+    padding: 6em 2rem;
+    background: url('../img/blog/b10.jpg') right;
+    background-size: cover;
+}
+/*  */
+.card-pro-2 div:first-child{
+    padding: 4em 2rem;
+    background: url('../img/blog/b7.jpg') right;
+    background-size: cover;
+}
+.card-pro-2 div:nth-child(2){
+    padding: 4em 2rem;
+    background: url('../img/blog/b4.jpg') right;
+    background-size: cover;
+}
+.card-pro-2 div:last-child{
+    padding: 4em 2rem;
+    background: url('../img/blog/b18.jpg') right;
+    background-size: cover;
+}
+.btn-hover:hover button{
+    background-color: #088178;
+    color: white; 
+    border-color: #088178;
+}
+.bg-search{
+    background:#1d2d55 url('../img/blog/b14.png') no-repeat top 31% left 17%;
+}
+.input-group{
+    width: 28rem;
+}
+.input-group button,.input-group input{
+    padding: 10px 25px;
+}
+.input-group button,.input-group input:focus,button:focus{
+   border: none!important;
+   outline: none!important;
+   box-shadow: none!important;
+   z-index: 0!important;
+}
+.icon-hover a i,.a-hover a{
+    transition: all .2s;
+}
+.icon-hover a:hover i{
+    color: #098078;
+}
+.a-hover a:hover{
+    font-weight: 500;
+    color: #09756e!important;
+}
+form textarea,form input{
+    font-size: 20px!important;
+    resize:none;
+}
+form textarea,form input{
+    font-size: 20px!important;
+    resize:none;
+    border-radius: 0!important;
+}
+form textarea:focus,form input:focus{
+    box-shadow: none!important;
+    border-color:#ced4da!important; 
+}
+.text-line{
+    text-decoration: underline dotted;
+}
+.blog-gap{
+    gap: 5rem 0;
+}
+.blog-before::before{
+    content: '13/01';
+    font-weight: bold;
+    position: absolute;
+    font-size: 100px;
+    opacity: 0.3;
+    top: -85px;
+    z-index: 1;
+}
+.blog-before img{
+    position: relative;
+    z-index: 2;
+}
+@media screen and (max-width:991px) {
+    .img-header{
+        height: 70vh;
+        background-position: top 26% right 40%;
+    }
+    .fn-size{
+        padding-left: 15px;
+        font-size: 10px!important;
+    }
+    .fn-size div :nth-child(4){
+        width: 190px;
+    }  
+}
+/* lg */
+@media screen and (min-width: 992px) {
+    .row-cols-lg-4 .col{
+        width: 23%;
+    }
+    .card-bg{
+        width: 49%;
+    }
+}
+/* md */
+@media screen and (max-width: 991px) {
+    .row-cols-md-2 .col{
+        width: 48%;
+    }
+    .card-bg{
+        width: 100%;
+    }
+    .car-shop{
+        width: 40%!important;
+    }
+}
+/* smx */
+@media screen and (max-width: 767px) {
+    .row-cols-1 .col{
+        margin: 0 0;
+        width: 100%;
+    }
+    .card-bg{
+        width: 98%;
+    }
+    .car-shop{
+        width: 86%!important;
+    }
+}
+
+@keyframes before-hover{
+    0%{
+        width: 0px;
+    }
+}
